@@ -1,0 +1,61 @@
+/* KanbanColumn.css */
+.kanban-column {
+  background: #f4f5f7;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 12px;
+  flex: 1;
+  position: relative; /* Add this for positioning the action buttons */
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  background-color: #f4f5f7;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: space-between; /* Space between title and action buttons */
+  position: relative;
+}
+
+/* KanbanColumn.css */
+.priority-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.priority-title {
+  flex: 1;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.ticket-count {
+  margin-left: 40%;
+  opacity: 0.6;
+  align-items: auto;
+  font-size: 12px;
+}
+
+.add-button,
+.more-options {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px;
+    cursor: pointer;
+}
+
+.add-button:hover,
+.more-options:hover {
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+.column-title {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 8px;
+}
+

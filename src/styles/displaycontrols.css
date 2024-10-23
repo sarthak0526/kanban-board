@@ -1,0 +1,90 @@
+/* Style the wrapper for display controls */
+.display-controls-wrapper {
+    background: white; /* White background for the whole wrapper */
+    padding: 20px;
+    width: 100%;
+}
+
+/* Display controls styling */
+.display-controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Style the display button */
+.display-button {
+    background: white;
+    border: 1px solid #ccc; /* Add border color */
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Change background and border color on hover */
+.display-button:hover {
+    background: #f0f0f0;
+    border-color: #b0b0b0;
+}
+
+/* Set the display icon styling */
+.display-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for display text */
+.display-text {
+    font-size: 14px;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 8px;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    padding: 12px;
+    width: 200px;
+    z-index: 10;
+}
+
+/* Show dropdown when the open class is active */
+.dropdown.open {
+    display: flex;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.dropdown-item label {
+    font-size: 12px;
+    color: #555;
+    flex: 1;
+}
+
+.dropdown-item select {
+    width: 60%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}

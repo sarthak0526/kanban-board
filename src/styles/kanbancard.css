@@ -1,0 +1,85 @@
+/* KanbanCard.css */
+.kanban-card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 120px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.kanban-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Adds space between status button and text section */
+}
+
+.status-dot {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+}
+.text-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-id {
+  font-size: 12px;
+  color: #999;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 16px;
+  margin: 4px 0;
+  color: #333;
+  text-align: left;
+  font-weight: 600;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  left: 40px; /* Aligns with the text section */
+}
+
+.card-badge {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #555;
+}
